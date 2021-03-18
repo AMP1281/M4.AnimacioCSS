@@ -70,15 +70,15 @@ body{
             border: 2px solid white;
             position: relative;
             animation-name: animacion;
-            animation-duration: 7s;
+            animation-duration: 4s;
             animation-direction: alternate-reverse;
             animation-timing-function: ease-out;
             animation-iteration-count: infinite;
         }
         @keyframes animacion{
             0% {left: 0vh; top: 0vh;}
-            20% {left: calc(100vw - 100px); top: calc(100vh - 100px);}
-            40% {left: calc(50vw - 100px); top: 0vh;}
+            20% {left: calc(95vw - 100px); top: calc(100vh - 100px);}
+            40% {left: calc(40vw - 100px); top: 0vh;}
             50% {left: 0vw; top: calc(50vh - 100px);}
             70% {left: calc(60vw - 100px); top: calc(100vh - 100px);}
             80% {left: calc(100vw - 100px); top: calc(80vh - 100px);}
