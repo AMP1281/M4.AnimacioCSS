@@ -49,13 +49,31 @@ a img{
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
     display: block;
 }
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
 /*Fin RESET*/
 
 /*EJERCICIO*/
-
-.pelota{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    background-color: yellow;
+body{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 10px white;
+}
+    .container{
+        width: 80%;
+        height: 80%;
+        background: green;
+    }
+        .pelota{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: yellow;
+            position: relative;
 }
