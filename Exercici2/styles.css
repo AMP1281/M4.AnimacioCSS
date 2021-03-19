@@ -71,7 +71,7 @@ body{
             position: relative;
             animation-name: animacion;
             animation-duration: 9s;
-            animation-direction: reverse;
+            animation-direction: alternate-reverse;
             animation-iteration-count: infinite;
         }
         @keyframes animacion{
