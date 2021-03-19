@@ -1,0 +1,86 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,
+dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html{
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td{
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote{
+    quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after{
+    content: "";
+    content: none;
+}
+
+a img{
+    border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
+    display: block;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*Fin RESET*/
+
+/*EJERCICIO*/
+body{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    border: 10px solid blue;
+}
+        .pelota{
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            background-color: yellow;
+            border: 2px solid white;
+            position: relative;
+            animation-name: animacion;
+            animation-duration: 4s;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes animacion{
+            0% {left: 0vh; top: 0vh;}
+            20% {left: calc(95vw - 100px); top: calc(100vh - 100px);}
+            40% {left: calc(40vw - 100px); top: 0vh;}
+            50% {left: 0vw; top: calc(50vh - 100px);}
+            70% {left: calc(60vw - 100px); top: calc(100vh - 100px);}
+            80% {left: calc(100vw - 100px); top: calc(80vh - 100px);}
+            100% {left: 0vh; top: 0vh;}
+        }
