@@ -59,28 +59,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body{
     height: 100vh;
     width: 100vw;
-    background: black;
-    border: 10px solid blue;
+    background: rgb(52, 143, 52);
+    border: 10px solid white;
 }
         .pelota{
             width: 80px;
             height: 80px;
             border-radius: 40px;
             background-color: yellow;
-            border: 2px solid white;
+            border: 2px solid yellowgreen;
             position: relative;
             animation-name: animacion;
-            animation-duration: 4s;
-            animation-direction: alternate-reverse;
-            animation-timing-function: ease-out;
+            animation-duration: 9s;
+            animation-direction: reverse;
             animation-iteration-count: infinite;
         }
         @keyframes animacion{
-            0% {left: 0vh; top: 0vh;}
-            20% {left: calc(95vw - 100px); top: calc(100vh - 100px);}
-            40% {left: calc(40vw - 100px); top: 0vh;}
-            50% {left: 0vw; top: calc(50vh - 100px);}
-            70% {left: calc(60vw - 100px); top: calc(100vh - 100px);}
-            80% {left: calc(100vw - 100px); top: calc(80vh - 100px);}
-            100% {left: 0vh; top: 0vh;}
+            0% {left: 0vh; top: calc(0vh - 20px); animation-timing-function: ease-in; transform: scaleY(0.5);}
+            12.5% {left: calc(30vw - 96.46px); top: calc(100vh - 90px); animation-timing-function: ease-out; transform: scaleY(1);}
+            25% {left: calc(45vw - 96.46px); top: calc(0vh - 20px); animation-timing-function: ease-in;transform: scaleY(0.5);}
+            37.5% {left: calc(70vw - 96.46px); top: calc(100vh - 90px); animation-timing-function: ease-out;transform: scaleY(1);}
+            50% {left: calc(100vw - 96.46px); top: calc(0vh - 20px); animation-timing-function: ease-in; transform: scaleY(0.5);}
+            62.5% {left: calc(85vw - 96.46px); top: calc(100vh - 90px); animation-timing-function: ease-out; transform: scaleY(1);}
+            75% {left: calc(50vw - 96.46px); top: calc(0vh - 20px); animation-timing-function: ease-in; transform: scaleY(0.5);}
+            87.5% {left: calc(20vw - 96.46px); top: calc(100vh - 90px); animation-timing-function: ease-out; transform: scaleY(1);}
+            100% {left: 0vh; top: calc(0vh - 20px); animation-timing-function: ease-in;transform: scaleY(0.5)}
         }
