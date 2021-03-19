@@ -71,16 +71,58 @@ body{
         align-items: center;
         height: 98%;
         width: 98%;
+        font-family: 'Lato', sans-serif;
+        color: white;
+        font-weight: lighter;
+        font-size: 5vh;
     }
         ul{
             height: 100%;
             width: 100%;
             display: flex;
-            flex-flow: column nowrap;
+            flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
         }
             li{
                 display: flex;
                 flex: 1 1 auto;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                margin: 0.1%;
             }
+            li:hover{
+                    background: rgb(0,0,0,.1);
+                    transform: skewX(20deg);
+                    z-index: 10;
+                    }
+                .IT{
+                    background: #244F75;
+                }
+                .A{
+                    background: #60BFBF;
+                }
+                .CA{
+                    background: #8C4B7E;
+                }
+                .DE{
+                    background: #F8BB44;
+                }
+                .MY{
+                    background: #F24B4B;
+                }
+                    .fa-heart::before {
+                        font-size: 3.5vh;
+                    }
+                    /*li div{
+                        display: flex;
+                        height: 100%;
+                        width: 100%;
+                        background: rgb(0,0,0,.1);
+                        transform: skewX(30deg);
+                        position: absolute;
+                        z-index: 3;*/
+
+
