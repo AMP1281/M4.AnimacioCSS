@@ -59,7 +59,7 @@ body{
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     background: whitesmoke;
@@ -70,7 +70,7 @@ body{
         justify-content: center;
         align-items: center;
         height: 98%;
-        width: 98%;
+        width: 97.8%;
         font-family: 'Lato', sans-serif;
         color: white;
         font-weight: lighter;
@@ -81,48 +81,96 @@ body{
             width: 100%;
             display: flex;
             flex-flow: row nowrap;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
+            overflow: hidden;
         }
             li{
                 display: flex;
-                flex: 1 1 auto;
                 justify-content: center;
-                align-items: center;
+                align-items:center;
                 height: 100%;
-                width: 100%;
-                margin: 0.1%;
+                width: 19.80%;
+                overflow: hidden;
             }
-            li:hover{
-                    background: rgb(0,0,0,.1);
-                    transform: skewX(20deg);
-                    z-index: 10;
-                    }
                 .IT{
                     background: #244F75;
+                    animation-name: IT;
+                    animation-duration: 0.2s;
+                    animation-direction: normal;
+                    animation-iteration-count: 1;
                 }
                 .A{
                     background: #60BFBF;
+                    animation-name: A;
+                    animation-duration: 0.4s;
+                    animation-direction: normal;
+                    animation-iteration-count: 1;
                 }
                 .CA{
                     background: #8C4B7E;
+                    animation-name: CA;
+                    animation-duration: 0.6s;
+                    animation-direction: normal;
+                    animation-iteration-count: 1;
                 }
                 .DE{
                     background: #F8BB44;
+                    animation-name: DE;
+                    animation-duration: 0.8s;
+                    animation-direction: normal;
+                    animation-iteration-count: 1;
                 }
                 .MY{
                     background: #F24B4B;
+                    animation-name: MY;
+                    animation-duration: 1s;
+                    animation-direction: normal;
+                    animation-iteration-count: 1;
                 }
                     .fa-heart::before {
                         font-size: 3.5vh;
                     }
-                    /*li div{
-                        display: flex;
+                    li p{
+                        position: absolute;
+                    }
+                    /*Transparencia*/
+                    li div{
                         height: 100%;
                         width: 100%;
-                        background: rgb(0,0,0,.1);
+                        background: rgba(245, 238, 238, 0.1);
                         transform: skewX(30deg);
-                        position: absolute;
-                        z-index: 3;*/
+                    }
+                        /*Efecte amb el mouse*/
+                        li div:hover{
+                            transition: transform 0.8s ease-in-out;
+                            transform: scale(4);
+                        }
+                        /*Animacio inicial*/
+                        @keyframes IT{
+                            0%{transform: translateX(-70vh);animation-timing-function: ease-out;animation-delay: 1s;}
+                            100%{transform: translateX(0)}
+                        }
+                        @keyframes A{
+                            0%{transform: translateY(100vh);animation-timing-function: ease-out; animation-delay: 1.1s;}
+                            100%{transform: translateY(0))}
+                        }
+                        @keyframes CA{
+                            0%{transform: translateY(-100vh);animation-timing-function: ease-out; animation-delay: 1.2s;}
+                            100%{transform: translateY(0)}
+                        }
+                        @keyframes DE{
+                            0%{transform: translateY(100vh);animation-timing-function: ease-out;animation-delay: 1.3s;}
+                            100%{transform: translateY(0)}
+                        }
+                        @keyframes MY{
+                            0%{transform: translateX(70vh);animation-timing-function: ease-out;animation-delay: 1.4s;}
+                            100%{transform: translateY(0)}
+                        }
+
+
+
+
+
 
 
